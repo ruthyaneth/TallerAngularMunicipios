@@ -1,0 +1,202 @@
+<div class="form-group">
+    <label id="labelM">Municipio</label>
+    <select id="selectM" [(ngModel)]="opcionSeleccionado" (change)="capturar()">
+      <option>Almeida</option>
+      <option>Aquitania (PUEBLOVIEJO)</option>
+      <option>Arcabuco</option>
+      <option>Belen</option>
+      <option>Berbeo</option>
+      <option>Beteitiva</option>
+      <option>Boavita</option>
+      <option>Boyaca</option>
+      <option>Buenavista</option>
+      <option>Busbanza</option>
+      <option>Caldas</option>
+      <option>Campohermoso</option>
+      <option>Cerinza</option>
+      <option>Chinavita</option>
+      <option>Chiquinquira</option>
+      <option>Chíquiza</option>
+      <option>Chiscas</option>
+      <option>Chita</option>
+      <option>Chitaraque</option>
+      <option>Chivata</option>
+      <option>Chivor</option>
+      <option>Cienega</option>
+      <option>Cómbita</option>
+      <option>Coper</option>
+      <option>Corrales</option>
+      <option>Covarachía</option>
+      <option>Cubará</option>
+      <option>Cucaita</option>
+      <option>Cuitiva</option>
+      <option>Duitama</option>
+      <option>El Cocuy</option>
+      <option>El Espino</option>
+      <option>Firavitoba</option>
+      <option>Floresta</option>
+      <option>Gachantiva</option>
+      <option>Gameza</option>
+      <option>Garagoa</option>
+      <option>Guacamayas</option>
+      <option>Guateque</option>
+      <option>Guayatá</option>
+      <option>Guicán de la Sierra</option>
+      <option>Iza</option>
+      <option>Jenesano</option>
+      <option>Jericó</option>
+      <option>La Capilla</option>
+      <option>La Uvita</option>
+      <option>La Victoria</option>
+      <option>Labranzagrande</option>
+      <option>Macanal</option>
+      <option>Maripi</option>
+      <option>Miraflores</option>
+      <option>Mongua</option>
+      <option>Mongui</option>
+      <option>Moniquira</option>
+      <option>Motavita</option>
+      <option>Muzo</option>
+      <option>Nobsa</option>
+      <option>Nuevo Colon</option>
+      <option>Oicata</option>
+      <option>Otanche</option>
+      <option>Pachavita</option>
+      <option>Paez</option>
+      <option>Paipa</option>
+      <option>Pajarito</option>
+      <option>Panqueba</option>
+      <option>Pauna</option>
+      <option>Paya</option>
+      <option>Paz de Rio</option>
+      <option>Pesca</option>
+      <option>Pisba</option>
+      <option>Puerto Boyacá</option>
+	  <option>Quípama </option>
+	  <option>Ramiriquí </option>
+	  <option>Ráquira</option>
+      <option>Rondón</option>
+	  <option>Saboyá</option>
+	  <option>Sáchica</option>
+	  <option>Samacá</option>
+	  <option>San Eduardo</option>
+	  <option>San José de Pare</option>
+	  <option>San Luis de Gaceno</option>
+	  <option>San Mateo</option>
+	  <option>San Miguel de Sema</option>
+      <option>San Pablo de Borbur</option>
+      <option>Santa Maria</option>
+      <option>Santa Rosa de Viterbo</option>
+	  <option>Santa Sofía</option>
+	  <option>Santana</option>
+	  <option>Sativanorte</option>		
+	  <option>Sativasur</option>
+	  <option>Siachoque</option>
+ 	  <option>Soatá</option>
+	  <option>Socha</option>
+	  <option>Socotá</option>
+	  <option>Sogamoso</option>
+	  <option>Somondoco</option>
+	  <option>Sora</option>
+	  <option>Soracá</option>
+	  <option>Sotaquirá</option>	
+	  <option>Susacón</option>
+	  <option>Sutamarchán</option>
+	  <option>Sutatenza</option>
+	  <option>Tasco</option>
+	  <option>Tenza</option>
+	  <option>Tibaná</option>
+	  <option>Tibasosa</option>
+  	  <option>Tinjacá</option>
+  	  <option>Tipacoque</option>
+      <option>Toca</option>     	
+ 	  <option>Toguí</option>
+	  <option>Tópaga</option>
+	  <option>Tota</option>
+	  <option>Tunja</option>
+	  <option>Tununguá</option>
+      <option>Turmequé</option>
+	  <option>Tuta</option>
+	  <option>Tutazá</option>
+	  <option>Umbitá</option>
+	  <option>Ventaquemada</option>
+	  <option>Villa de Leyva</option>
+	  <option>Viracachá</option>
+	  <option>Zetaquira</option>
+    </select>
+  </div>
+
+<div class="container" >
+	<div class="row">
+		<div class="col">
+			<div class="preguntas">
+			<h3>Pregunta 1</h3>
+			<h4>Si:  {{ms.consultaSiPregunta1}} </h4>
+			<h4>No:  {{ms.consultaNoPregunta1}}</h4>
+			<h4>Válidos: {{ms.consultaValidosPregunta1}}</h4>
+			<h4>Nulos:  {{ms.consultaNulosPregunta1}}</h4>
+			<h4>No marcados:  {{ms.consultaNoMarcadosPregunta1}}</h4>
+			</div>
+		</div>
+		<div class="col">
+			<div class="preguntas">
+		 	<h3>Pregunta 2</h3>
+		 	<h4>Si:  {{ms.consultaSiPregunta2}}</h4>
+		 	<h4>No:  {{ms.consultaNoPregunta2}}</h4>
+		 	<h4>Válidos: {{ms.consultaValidosPregunta2}}</h4>
+			<h4>Nulos: {{ms.consultaNulosPregunta2}}</h4>
+			<h4>No marcados:  {{ms.consultaNoMarcadosPregunta2}}</h4>
+			</div>			
+		</div>
+		<div class="col">
+			<div class="preguntas">
+			<h3>Pregunta 3</h3>
+			<h4>Si:  {{ms.consultaSiPregunta3}}</h4>	
+			<h4>No:  {{ms.consultaNoPregunta3}}</h4>
+			<h4>Válidos: {{ms.consultaValidosPregunta3}}</h4>
+			<h4>Nulos: {{ms.consultaNulosPregunta3}}</h4>
+			<h4>No marcados:  {{ms.consultaNoMarcadosPregunta3}}</h4>	
+			</div>			
+		</div>
+		<div class="col">
+			<div class="preguntas">
+			<h3>Pregunta 4</h3>
+			<h4>Si:  {{ms.consultaSiPregunta4}}</h4>	
+			<h4>No:  {{ms.consultaNoPregunta4}}</h4>	
+			<h4>Válidos:  {{ms.consultaValidosPregunta4}}</h4>
+			<h4>Nulos:  {{ms.consultaNulosPregunta4}}</h4>
+			<h4>No marcados:  {{ms.consultaNoMarcadosPregunta4}}</h4>
+			</div>			
+		</div>
+		<div class="col">
+			<div class="preguntas">
+			<h3>Pregunta 5</h3>	
+			<h4>Si:  {{ms.consultaSiPregunta5}}</h4>
+			<h4>No: {{ms.consultaNoPregunta5}}</h4>	
+			<h4>Válidos: {{ms.consultaValidosPregunta5}}</h4>
+			<h4>Nulos:  {{ms.consultaNulosPregunta5}}</h4>
+			<h4>No marcados:  {{ms.consultaNoMarcadosPregunta5}}</h4>
+			</div>	
+		</div>
+		<div class="col">
+			<div class="preguntas">
+			<h3>Pregunta 6</h3>
+			<h4>Si: {{ms.consultaSiPregunta6}}</h4>
+			<h4>No:  {{ms.consultaNoPregunta6}}</h4>
+			<h4>Válidos:  {{ms.consultaValidosPregunta6}}</h4>
+			<h4>Nulos:  {{ms.consultaNulosPregunta6}}</h4>
+			<h4>No marcados:  {{ms.consultaNoMarcadosPregunta6}}</h4>
+			</div>			
+		</div>
+		<div class="col">
+			<div class="preguntas">
+			<h3 style="font-size: 3">Pregunta 7</h3>
+			<h4>Si:  {{ms.consultaSiPregunta7}}</h4>
+			<h4>No:  {{ms.consultaNoPregunta7}}</h4>	
+			<h4>Válidos:  {{ms.consultaValidosPregunta7}}</h4>
+			<h4>Nulos:  {{ms.consultaNulosPregunta7}}</h4>
+			<h4>No marcados: {{ms.consultaNoMarcadosPregunta7}}</h4>	
+			</div>
+		</div>
+	</div>	
+</div>
